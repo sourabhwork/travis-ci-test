@@ -1,0 +1,10 @@
+language: c
+
+sudo: false
+
+script:
+  - gcc -O0 hello.c -o hello
+  - ./hello
+
+after_success:
+  - echo "Done"
